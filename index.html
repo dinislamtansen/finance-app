@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        
+        <header class="flex font-extrabold text-2xl justify-center mt-5">
+            <p >Welcome to our bank</p>
+    </header>
+    <section class="container">
+        <div class="grid grid-cols-3 mt-10 gap-10">
+            <div class=" col-span-1">
+                <canvas id="myChart"></canvas>
+            </div>
+            <div class="col-span-2">
+                <div class=" flex justify-center">
+                    <div class=" bg-emerald-200 w-[550px] h-[190px] items-center flex justify-center rounded-xl">
+                        <h3 class="text-3xl">Total Balance: <span>0</span></h3>
+                    </div>
+                </div>
+                <div class="flex justify-center mt-5 gap-5">
+                    
+                        <div class="flex justify-center">
+                            <div class="w-[400px] h-32 bg-blue-400 text-center flex justify-center items-center rounded-lg">
+                               <h3 class="text-3xl">Deposit:<span>0</span></h3> 
+                           </div>
+                        </div>
+                
+                    <div class="w-[400px] h-32 bg-red-600 flex justify-center items-center rounded-lg">
+                        <h3  class="text-3xl">Withdraw: <span>0</span></h3>
+                    </div>
+                </div>
+                <div class="gap-3 flex justify-center mt-5">
+                    <input type="text"  placeholder="amount" class="px-9 py-3 border border-slate-700 rounded-md text-center" ><button class="bg-slate-200  w-36 rounded-lg">Deposit</button>
+                    <input type="text" class="px-9 py-3 border border-slate-700 rounded-md text-center"  placeholder="amount"><button class="bg-gray-200 w-36 rounded-lg">Withdraw</button>
+                    
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/chart.js"></script>
+
+
+</body>
+</html>
