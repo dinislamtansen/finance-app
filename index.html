@@ -18,29 +18,29 @@
             </div>
             <div class="col-span-2">
                 <div class=" flex justify-center">
-                    <div class=" bg-emerald-200 w-[550px] h-[190px] items-center flex justify-center rounded-xl">
-                        <h3 class="text-3xl">Total Balance: <span id="total">0</span></h3>
+                    <div class=" bg-red-300 w-[550px] h-[190px] items-center flex justify-center rounded-xl">
+                        <h3 class="text-3xl">Total Balance: <span id="total">0</span>৳</h3>
                     </div>
                 </div>
                 <div class="flex justify-center mt-5 gap-5">
                     
                         <div class="flex justify-center">
                             <div class="w-[400px] h-32 bg-blue-400 text-center flex justify-center items-center rounded-lg">
-                               <h3 class="text-3xl">Deposit:<span id="DepositAmount">0</span></h3> 
+                               <h3 class="text-3xl">Deposit:<span id="DepositAmount">0</span>৳</h3> 
                            </div>
                         </div>
                 
-                    <div class="w-[400px] h-32 bg-red-600 flex justify-center items-center rounded-lg">
-                        <h3  class="text-3xl">Withdraw: <span id="displayWidth"> 0</span></h3>
+                    <div class="w-[400px] h-32 bg-amber-600 flex justify-center items-center rounded-lg">
+                        <h3  class="text-3xl">Withdraw: <span id="displayWidth"> 0</span>৳</h3>
                     </div>
                 </div>
                 <div class="gap-3 flex justify-center mt-5">
-                    <input type="number" id="depoInput" min="0" placeholder="amount" class="px-9 py-3 border border-slate-700 rounded-md text-center" >
+                    <input type="number" id="depoInput" min="1000" placeholder="amount" class="px-9 py-3 border border-slate-700 rounded-md text-center" >
                     <button class="bg-slate-200  w-36 rounded-lg" id="despositBtn">Deposit</button>
 
                                    <!--  widthraw-->
 
-                    <input type="number" class="px-9 py-3 border border-slate-700 rounded-md text-center"  placeholder="amount" min="0" id="widthInput">
+                    <input type="number" class="px-9 py-3 border border-slate-700 rounded-md text-center"  placeholder="amount" min="1000"  id="widthInput">
                     <button class="bg-gray-200 w-36 rounded-lg" id="widthBtn">Withdraw</button>
                     
                 </div>
@@ -49,8 +49,11 @@
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/desposit.js"></script>
+    <script src="./js/withdraw.js"></script>
     <script src="./js/chart.js"></script>
-    <script src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
 
 </body>
