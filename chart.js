@@ -1,6 +1,6 @@
 const ctx = document.getElementById('myChart');
 
- const chart= new Chart(ctx, {
+ new Chart(ctx, {
     type: 'doughnut',
     data: {
       labels: ['deposit', 'total', 'withdraw'],
